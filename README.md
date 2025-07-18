@@ -198,11 +198,11 @@ Each item must have a unique key prop to help React identify which items have ch
 
     I handle it using an onSubmit handler attached to the form. Inside the handler, I prevent the default form action using e.preventDefault() and then process the form data using state values.
 
-Example:
-const handleSubmit = (e) => {
-e.preventDefault();
-console.log(inputValue);
-};
+    Example:
+    const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(inputValue);
+    };
 
 ### localStorage & Side Effects
 

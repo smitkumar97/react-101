@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
+import Header from '../UI/Header';
 
 const TaskApp = () => {
     const [taskList, setTaskList] = useState([
@@ -46,11 +47,7 @@ const TaskApp = () => {
     return (
         <div className="min-h-screen bg-blue-950 py-20 px-4 flex flex-col items-center justify-center">
             <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden p-6">
-                <h1 className="text-5xl font-black text-white mb-10 text-center drop-shadow-2xl">
-                    <span className="bg-gradient-to-r from-blue-500 to-red-500 bg-clip-text text-transparent px-4 py-2 rounded-lg">
-                        TASK TRACKER
-                    </span>
-                </h1>
+                <Header title={'TASK TRACKER'} />
                 <TaskForm addTaskItem={addTaskItem} taskList={taskList} />
                 <div className="mt-8">
                     <TaskList

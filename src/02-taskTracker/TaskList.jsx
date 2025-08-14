@@ -80,7 +80,8 @@ const TaskList = ({ listItems, editTask, removeTask }) => {
                                     <div className="flex space-x-2">
                                         <button
                                             onClick={() => handleEditClick(item)}
-                                            className="text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded-md text-sm"
+                                            disabled={item.completed}
+                                            className={`text-white bg-blue-600 px-3 py-1 rounded-md text-sm ${item.completed ? 'cursor-default' : 'cursor-pointer hover:bg-blue-700'}`}
                                         >
                                             Edit
                                         </button>

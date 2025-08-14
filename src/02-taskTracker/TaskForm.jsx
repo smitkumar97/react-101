@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-function TaskForm({ addTaskItem }) {
+function TaskForm({ addTaskItem, taskList }) {
     const [task, setTask] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (task.trim()) {
             addTaskItem({
-                id: Date.now(),
+                id: taskList.length + 1,
                 taskName: task.trim(),
                 completed: false
             });

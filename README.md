@@ -218,3 +218,33 @@ Each item must have a unique key prop to help React identify which items have ch
     Answer:
 
     Yes, and that’s the ideal place to use it. Since useEffect runs after the component mounts, it avoids any issues related to server-side rendering, and ensures that we’re accessing the browser’s APIs only after the component is in the DOM.
+
+## 📅 Week 3: Component Communication + Expense Tracker
+
+### ✅ Key Concepts
+
+- Lifting state up
+- Passing callbacks as props
+- Modular & reusable components
+- Currency and date formatting
+
+### 🧠 What I Built
+
+- 📊 Expense Tracker App
+  - Add expenses
+  - Filter by month
+  - Chart visual for expenses
+  - Modular and reusable component design
+
+### 📤 Communication Flow
+
+- `ExpenseForm` → Parent → Updates state
+- `Filter` → Parent → Filters expense list
+- Parent → Passes filtered data → `Chart` + `List`
+
+### 💬 Interview Readiness
+
+- Can explain lifting state, props callbacks
+- Can build reusable components
+- Can handle form input, list rendering, conditional UI
+- Comfortable with formatting and charts

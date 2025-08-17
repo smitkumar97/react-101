@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import ThemeToggle from './ThemeToggle';
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function Header() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+
     const linkClasses =
         "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800";
 
@@ -33,8 +37,8 @@ export default function Header() {
                     Create Post
                 </NavLink>
             </div>
-
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
+            <button onClick={() => toggleTheme((prev) => (prev === "light" ? "dark" : "light"))}>{theme}</button>
         </nav>
     );
 }

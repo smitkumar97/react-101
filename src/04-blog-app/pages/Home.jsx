@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PostList from "../components/PostList";
-import useLocalStorage from "./../hooks/useLocalStorage";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const Home = () => {
     const [posts, setPosts] = useLocalStorage("posts", []);

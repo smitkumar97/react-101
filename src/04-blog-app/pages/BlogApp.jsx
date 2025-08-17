@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import PostDetails from './PostPage'
-import Header from './../components/Header';
+import Header from '../components/Header';
 import CreatePost from './CreatePost';
 import EditPost from './EditPost';
-import { ThemeProvider } from './../context/ThemeContext';
+import { ThemeProvider } from '../context/ThemeContext';
 
 const BlogApp = () => {
     return (

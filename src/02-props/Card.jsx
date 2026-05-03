@@ -1,24 +1,33 @@
 import React from "react";
 import "./Card.css";
+import { Bookmark } from "lucide-react";
 
-const Card = (adName) => {
-  console.log(adName);
-
+const Card = (jobs) => {
   return (
     <div className="card">
-      <img
-        src={adName.image}
-        alt=""
-      />
-      <h1 className="h1">{adName.ad}</h1>
-      <span>Price: {adName.price}</span>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.{" "}
-      </p>
-      <button>View details</button>
+      <div className="top">
+        <img src={jobs.brandLogo} alt="" />
+        <button>
+          Save <Bookmark size={10} />{" "}
+        </button>
+      </div>
+      <div className="center">
+        <h3>
+          {jobs.company} <span>{jobs.datePosted}</span>
+        </h3>
+        <h2>{jobs.post}</h2>
+        <div className="tag">
+          <h4>{jobs.tag1}</h4>
+          <h4>{jobs.tag2}</h4>
+        </div>
+      </div>
+      <div className="bottom">
+        <div>
+          <h3>{jobs.pay}</h3>
+          <p>Mumbai, India</p>
+        </div>
+        <button>Apply Now</button>
+      </div>
     </div>
   );
 };

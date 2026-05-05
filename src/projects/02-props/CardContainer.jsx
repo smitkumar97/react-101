@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import styles from "./card.module.css";
 import Card from "./Card";
 
 const CardContainer = () => {
@@ -116,7 +116,7 @@ const CardContainer = () => {
   ];
 
   return (
-    <div className="parent">
+    <div className={styles.parent}>
       {jobOpenings.map(function (elem, idx) {
         return (
           <div key={idx}>

@@ -10,13 +10,14 @@ import { Parent } from "./projects/03-context-api/Parent";
 import Card from "./projects/02-props/Card";
 import CardContainer from "./projects/02-props/CardContainer";
 import TailwindPro from "./projects/05-tailwind-pro/TailwindPro";
-import 'remixicon/fonts/remixicon.css'
+import "remixicon/fonts/remixicon.css";
+import Hooks from "./projects/06-hooks/Hooks";
 
 function App() {
   return (
     <>
       {/* <CardContainer /> */}
-      <TailwindPro />
+      <Hooks/>
     </>
   );
 }

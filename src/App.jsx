@@ -12,12 +12,13 @@ import CardContainer from "./projects/02-props/CardContainer";
 import TailwindPro from "./projects/05-tailwind-pro/TailwindPro";
 import "remixicon/fonts/remixicon.css";
 import Hooks from "./projects/06-hooks/Hooks";
+import DummyJson from "./projects/06-hooks/DummyJson";
 
 function App() {
   return (
     <>
       {/* <CardContainer /> */}
-      <Hooks/>
+      <DummyJson/>
     </>
   );
 }
